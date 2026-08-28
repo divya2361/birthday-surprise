@@ -8,24 +8,15 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     min-height: 100vh;
-
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
+    font-family: "Segoe UI", Arial, sans-serif;
     overflow-x: hidden;
-
     color: #f5f7ff;
-
     background: #101827;
 }
 
@@ -36,12 +27,9 @@ body {
 
 .screen {
     min-height: 100vh;
-
     position: relative;
-
     overflow: hidden;
 }
-
 
 .hidden {
     display: none !important;
@@ -53,17 +41,11 @@ body {
 ===================================================== */
 
 .welcome-screen {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
-
     min-height: 100vh;
-
     background:
         radial-gradient(
             circle at 50% 15%,
@@ -72,7 +54,6 @@ body {
             #0d1524 75%,
             #080d17 100%
         );
-
     overflow: hidden;
 }
 
@@ -82,17 +63,11 @@ body {
 ===================================================== */
 
 .stars span {
-
     position: absolute;
-
     color: #ffffff;
-
     opacity: .7;
-
-    animation:
-        twinkle 3s ease-in-out infinite;
+    animation: twinkle 3s ease-in-out infinite;
 }
-
 
 .stars span:nth-child(1) {
     left: 8%;
@@ -100,13 +75,11 @@ body {
     font-size: 22px;
 }
 
-
 .stars span:nth-child(2) {
     left: 20%;
     top: 30%;
     font-size: 14px;
 }
-
 
 .stars span:nth-child(3) {
     left: 32%;
@@ -114,12 +87,10 @@ body {
     font-size: 18px;
 }
 
-
 .stars span:nth-child(4) {
     left: 50%;
     top: 22%;
 }
-
 
 .stars span:nth-child(5) {
     right: 22%;
@@ -127,25 +98,21 @@ body {
     font-size: 17px;
 }
 
-
 .stars span:nth-child(6) {
     right: 8%;
     top: 27%;
     font-size: 22px;
 }
 
-
 .stars span:nth-child(7) {
     right: 32%;
     top: 38%;
 }
 
-
 .stars span:nth-child(8) {
     left: 12%;
     top: 50%;
 }
-
 
 .stars span:nth-child(9) {
     right: 12%;
@@ -153,12 +120,10 @@ body {
     font-size: 20px;
 }
 
-
 .stars span:nth-child(10) {
     left: 40%;
     top: 50%;
 }
-
 
 .stars span:nth-child(11) {
     right: 42%;
@@ -166,15 +131,12 @@ body {
     font-size: 18px;
 }
 
-
 .stars span:nth-child(12) {
     left: 5%;
     top: 65%;
 }
 
-
 @keyframes twinkle {
-
     0%,
     100% {
         opacity: .25;
@@ -185,7 +147,6 @@ body {
         opacity: 1;
         transform: scale(1.25);
     }
-
 }
 
 
@@ -194,87 +155,52 @@ body {
 ===================================================== */
 
 .birthday-banner {
-
     position: absolute;
-
     top: 6%;
-
     left: 50%;
-
-    transform:
-        translateX(-50%)
-        rotate(-1deg);
-
+    transform: translateX(-50%) rotate(-1deg);
     display: flex;
-
     gap: 5px;
-
     padding: 12px 22px;
-
-    background:
-        rgba(235, 239, 247, .95);
-
+    background: rgba(235, 239, 247, .95);
     border-radius: 5px;
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.3);
-
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
     z-index: 10;
 }
 
-
 .birthday-banner span {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     width: 35px;
-
     height: 40px;
-
     background: #35445e;
-
     color: #ffffff;
-
     font-weight: 800;
-
     font-size: 17px;
-
     border-radius: 3px;
-
-    box-shadow:
-        inset 0 -4px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -4px 0 rgba(0,0,0,.15);
 }
-
 
 .birthday-banner span:nth-child(2) {
     transform: translateY(-4px);
 }
 
-
 .birthday-banner span:nth-child(4) {
     transform: translateY(4px);
 }
-
 
 .birthday-banner span:nth-child(7) {
     transform: translateY(3px);
 }
 
-
 .birthday-banner span:nth-child(10) {
     transform: translateY(-4px);
 }
 
-
 .banner-space {
     width: 12px !important;
-
     background: transparent !important;
-
     box-shadow: none !important;
 }
 
@@ -284,35 +210,20 @@ body {
 ===================================================== */
 
 .moon-window {
-
     position: absolute;
-
     right: 9%;
-
     top: 13%;
-
     width: 130px;
-
     height: 130px;
-
     border-radius: 50%;
-
-    background:
-        rgba(255,255,255,.04);
-
-    box-shadow:
-        0 0 80px rgba(188,211,255,.18);
+    background: rgba(255,255,255,.04);
+    box-shadow: 0 0 80px rgba(188,211,255,.18);
 }
 
-
 .moon {
-
     width: 100%;
-
     height: 100%;
-
     border-radius: 50%;
-
     background:
         radial-gradient(
             circle at 35% 30%,
@@ -320,9 +231,7 @@ body {
             #dbe4f2 60%,
             #aebdd2
         );
-
-    box-shadow:
-        0 0 40px rgba(224,236,255,.6);
+    box-shadow: 0 0 40px rgba(224,236,255,.6);
 }
 
 
@@ -331,100 +240,54 @@ body {
 ===================================================== */
 
 .duck-area {
-
     position: absolute;
-
     left: 7%;
-
     bottom: 23%;
-
     width: 240px;
-
     text-align: center;
-
-    animation:
-        duckFloat 3s ease-in-out infinite;
-
+    animation: duckFloat 3s ease-in-out infinite;
     z-index: 8;
 }
 
-
 .duck-body {
-
     font-size: 110px;
-
-    filter:
-        drop-shadow(
-            0 15px 12px rgba(0,0,0,.35)
-        );
+    filter: drop-shadow(0 15px 12px rgba(0,0,0,.35));
 }
-
 
 .duck-party-hat {
-
     position: absolute;
-
     top: -8px;
-
     left: 54%;
-
     font-size: 35px;
-
-    transform:
-        rotate(12deg);
+    transform: rotate(12deg);
 }
 
-
 .duck-sign {
-
     display: inline-flex;
-
     flex-direction: column;
-
     align-items: center;
-
     margin-top: -15px;
-
     padding: 10px 17px;
-
     background: #eef2f7;
-
     color: #27344c;
-
     border-radius: 8px;
-
-    box-shadow:
-        0 10px 20px rgba(0,0,0,.3);
-
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
     transform: rotate(-2deg);
 }
 
-
 .duck-sign span {
-
     font-size: 8px;
-
     letter-spacing: 2px;
-
     color: #70809b;
 }
 
-
 .duck-sign strong {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 14px;
-
     margin-top: 4px;
 }
 
-
 @keyframes duckFloat {
-
     0%,
     100% {
         transform: translateY(0);
@@ -433,7 +296,6 @@ body {
     50% {
         transform: translateY(-12px);
     }
-
 }
 
 
@@ -442,58 +304,32 @@ body {
 ===================================================== */
 
 .opening-note {
-
     position: relative;
-
     z-index: 5;
-
     text-align: center;
-
     margin-top: 30px;
-
     max-width: 620px;
 }
 
-
 .tiny-label {
-
     font-size: 9px;
-
     letter-spacing: 5px;
-
     color: #aebbd0;
-
     margin-bottom: 15px;
 }
 
-
 .opening-note h1 {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
-    font-size:
-        clamp(32px, 5vw, 58px);
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+    font-size: clamp(32px, 5vw, 58px);
     line-height: 1.15;
-
     font-weight: 500;
-
     color: #f7f9ff;
-
-    text-shadow:
-        0 4px 25px rgba(0,0,0,.35);
+    text-shadow: 0 4px 25px rgba(0,0,0,.35);
 }
 
-
 .opening-note > p:last-child {
-
     margin-top: 16px;
-
     color: #aebbd0;
-
     font-size: 14px;
 }
 
@@ -503,130 +339,73 @@ body {
 ===================================================== */
 
 .gift-scene {
-
     position: relative;
-
     z-index: 10;
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     margin-top: 28px;
 }
 
-
 .gift-box {
-
     position: relative;
-
     width: 125px;
-
     height: 110px;
-
     margin-bottom: 25px;
-
-    animation:
-        giftFloat 2.8s ease-in-out infinite;
+    animation: giftFloat 2.8s ease-in-out infinite;
 }
-
 
 .gift-lid {
-
     position: absolute;
-
     top: 25px;
-
     left: 0;
-
     width: 125px;
-
     height: 28px;
-
     background: #657997;
-
     border-radius: 6px;
-
     z-index: 3;
-
-    box-shadow:
-        0 6px 12px rgba(0,0,0,.3);
+    box-shadow: 0 6px 12px rgba(0,0,0,.3);
 }
-
 
 .gift-body {
-
     position: absolute;
-
     left: 8px;
-
     top: 48px;
-
     width: 109px;
-
     height: 65px;
-
     background: #536783;
-
     border-radius: 3px;
-
-    box-shadow:
-        0 10px 15px rgba(0,0,0,.35);
+    box-shadow: 0 10px 15px rgba(0,0,0,.35);
 }
-
 
 .gift-ribbon-horizontal {
-
     position: absolute;
-
     left: 0;
-
     top: 8px;
-
     width: 100%;
-
     height: 9px;
-
     background: #d7dfec;
 }
-
 
 .gift-ribbon-vertical {
-
     position: absolute;
-
     left: 48px;
-
     top: 0;
-
     width: 13px;
-
     height: 100%;
-
     background: #d7dfec;
 }
 
-
 .gift-bow {
-
     position: absolute;
-
     top: -15px;
-
     left: 37px;
-
     z-index: 5;
-
     font-size: 52px;
-
     transform: rotate(-4deg);
 }
 
-
 @keyframes giftFloat {
-
     0%,
     100% {
         transform: translateY(0);
@@ -635,7 +414,6 @@ body {
     50% {
         transform: translateY(-7px);
     }
-
 }
 
 
@@ -646,64 +424,37 @@ body {
 .gift-button,
 .look-up-button,
 .wish-button {
-
     border: none;
-
     cursor: pointer;
-
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
+    font-family: "Segoe UI", Arial, sans-serif;
     transition:
         transform .25s ease,
         box-shadow .25s ease;
 }
 
-
 .gift-button {
-
     padding: 14px 27px;
-
     border-radius: 50px;
-
     background: #e8edf5;
-
     color: #25334a;
-
     font-size: 14px;
-
     font-weight: 700;
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
 }
-
 
 .gift-button:hover {
-
     transform: translateY(-4px) scale(1.03);
-
-    box-shadow:
-        0 18px 35px rgba(0,0,0,.45);
+    box-shadow: 0 18px 35px rgba(0,0,0,.45);
 }
 
-
 .gift-button:active {
-
     transform: scale(.97);
 }
 
-
 .click-hint {
-
     margin-top: 10px;
-
     font-size: 10px;
-
     letter-spacing: 2px;
-
     color: #7f8da4;
 }
 
@@ -713,26 +464,18 @@ body {
 ===================================================== */
 
 .room-floor {
-
     position: absolute;
-
     bottom: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 17%;
-
     background:
         linear-gradient(
             to bottom,
             rgba(255,255,255,.03),
             rgba(0,0,0,.25)
         );
-
-    border-top:
-        1px solid rgba(255,255,255,.04);
+    border-top: 1px solid rgba(255,255,255,.04);
 }
 
 
@@ -741,87 +484,66 @@ body {
 ===================================================== */
 
 .page1-hearts span {
-
     position: absolute;
-
     bottom: -50px;
-
     color: #dce5f5;
-
     opacity: .6;
-
-    animation:
-        riseHeart 10s linear infinite;
+    animation: riseHeart 10s linear infinite;
 }
-
 
 .page1-hearts span:nth-child(1) {
     left: 10%;
     animation-delay: 1s;
 }
 
-
 .page1-hearts span:nth-child(2) {
     left: 25%;
     animation-delay: 4s;
 }
-
 
 .page1-hearts span:nth-child(3) {
     left: 40%;
     animation-delay: 2s;
 }
 
-
 .page1-hearts span:nth-child(4) {
     left: 55%;
     animation-delay: 6s;
 }
-
 
 .page1-hearts span:nth-child(5) {
     left: 68%;
     animation-delay: 3s;
 }
 
-
 .page1-hearts span:nth-child(6) {
     left: 78%;
     animation-delay: 7s;
 }
-
 
 .page1-hearts span:nth-child(7) {
     left: 88%;
     animation-delay: 5s;
 }
 
-
 .page1-hearts span:nth-child(8) {
     left: 92%;
     animation-delay: 1s;
 }
-
 
 .page1-hearts span:nth-child(9) {
     left: 33%;
     animation-delay: 8s;
 }
 
-
 .page1-hearts span:nth-child(10) {
     left: 5%;
     animation-delay: 5s;
 }
 
-
 @keyframes riseHeart {
-
     0% {
-        transform:
-            translateY(0)
-            rotate(0deg);
-
+        transform: translateY(0) rotate(0deg);
         opacity: 0;
     }
 
@@ -830,13 +552,9 @@ body {
     }
 
     100% {
-        transform:
-            translateY(-110vh)
-            rotate(25deg);
-
+        transform: translateY(-110vh) rotate(25deg);
         opacity: 0;
     }
-
 }
 
 
@@ -845,7 +563,6 @@ body {
 ===================================================== */
 
 .birthday-screen {
-
     background:
         radial-gradient(
             circle at 50% 0%,
@@ -853,21 +570,14 @@ body {
             #18253a 45%,
             #0c1422 100%
         );
-
     padding: 70px 20px;
-
     min-height: 100vh;
 }
 
-
 .memory-page {
-
     position: relative;
-
     z-index: 5;
-
     width: min(950px, 100%);
-
     margin: auto;
 }
 
@@ -877,85 +587,67 @@ body {
 ===================================================== */
 
 .memory-decorations span {
-
     position: fixed;
-
     color: #dbe5f4;
-
     opacity: .45;
-
-    animation:
-        twinkle 4s ease-in-out infinite;
-
+    animation: twinkle 4s ease-in-out infinite;
     z-index: 1;
 }
-
 
 .memory-decorations span:nth-child(1) {
     left: 4%;
     top: 20%;
 }
 
-
 .memory-decorations span:nth-child(2) {
     right: 7%;
     top: 17%;
 }
-
 
 .memory-decorations span:nth-child(3) {
     left: 9%;
     top: 70%;
 }
 
-
 .memory-decorations span:nth-child(4) {
     right: 12%;
     top: 50%;
 }
-
 
 .memory-decorations span:nth-child(5) {
     left: 17%;
     top: 40%;
 }
 
-
 .memory-decorations span:nth-child(6) {
     right: 20%;
     top: 75%;
 }
-
 
 .memory-decorations span:nth-child(7) {
     left: 45%;
     top: 8%;
 }
 
-
 .memory-decorations span:nth-child(8) {
     right: 45%;
     top: 90%;
 }
-
 
 .memory-decorations span:nth-child(9) {
     left: 3%;
     top: 88%;
 }
 
-
 .memory-decorations span:nth-child(10) {
     right: 4%;
     top: 88%;
 }
 
-
 .memory-decorations span:nth-child(11) {
     left: 50%;
     top: 30%;
 }
-
 
 .memory-decorations span:nth-child(12) {
     right: 30%;
@@ -968,47 +660,27 @@ body {
 ===================================================== */
 
 .memory-heading {
-
     text-align: center;
-
     margin-bottom: 55px;
 }
 
-
 .memory-eyebrow {
-
     font-size: 9px;
-
     letter-spacing: 5px;
-
     color: #aebbd0;
-
     margin-bottom: 12px;
 }
 
-
 .memory-heading h1 {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
-    font-size:
-        clamp(30px, 5vw, 52px);
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+    font-size: clamp(30px, 5vw, 52px);
     font-weight: 500;
-
     color: #f5f7fb;
 }
 
-
 .memory-subtitle {
-
     margin-top: 8px;
-
     color: #9aa9bf;
-
     font-size: 13px;
 }
 
@@ -1018,139 +690,77 @@ body {
 ===================================================== */
 
 .memory-collage {
-
     position: relative;
-
     min-height: 560px;
-
     margin: auto;
-
     max-width: 850px;
 }
 
-
 .memory-photo {
-
     position: absolute;
-
     background: #f4f2eb;
-
     padding: 12px 12px 40px;
-
-    box-shadow:
-        0 20px 45px rgba(0,0,0,.45);
-
+    box-shadow: 0 20px 45px rgba(0,0,0,.45);
     color: #26334a;
-
     transition:
         transform .35s ease,
         z-index .35s ease;
 }
 
-
 .memory-photo:hover {
-
-    transform:
-        rotate(0deg)
-        scale(1.05);
-
+    transform: rotate(0deg) scale(1.05);
     z-index: 20;
 }
 
-
 .photo-inner {
-
     width: 100%;
-
     height: 100%;
-
     overflow: hidden;
-
     background: #d9dee7;
 }
 
-
 .memory-photo img {
-
     width: 100%;
-
     height: 100%;
-
     display: block;
-
     object-fit: cover;
 }
 
-
 .photo-one {
-
     width: 280px;
-
     height: 350px;
-
     left: 8%;
-
     top: 30px;
-
     transform: rotate(-6deg);
-
     z-index: 2;
 }
 
-
 .photo-two {
-
     width: 300px;
-
     height: 380px;
-
     left: 50%;
-
     top: 0;
-
-    transform:
-        translateX(-50%)
-        rotate(3deg);
-
+    transform: translateX(-50%) rotate(3deg);
     z-index: 4;
 }
 
-
 .photo-three {
-
     width: 270px;
-
     height: 340px;
-
     right: 7%;
-
     top: 55px;
-
     transform: rotate(7deg);
-
     z-index: 3;
 }
 
-
 .photo-caption {
-
     position: absolute;
-
     bottom: 10px;
-
     left: 0;
-
     width: 100%;
-
     text-align: center;
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 13px;
-
     color: #43526a;
 }
 
@@ -1160,59 +770,34 @@ body {
 ===================================================== */
 
 .memory-note {
-
     position: absolute;
-
     padding: 14px 18px;
-
     background: #e9edf3;
-
     color: #34435b;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.25);
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     z-index: 10;
 }
 
-
 .memory-note span {
-
     display: block;
-
     font-size: 16px;
 }
 
-
 .memory-note small {
-
     font-size: 10px;
-
     color: #74839a;
 }
 
-
 .note-one {
-
     left: 2%;
-
     bottom: 30px;
-
     transform: rotate(-7deg);
 }
 
-
 .note-two {
-
     right: 3%;
-
     bottom: 10px;
-
     transform: rotate(6deg);
 }
 
@@ -1222,57 +807,31 @@ body {
 ===================================================== */
 
 .mini-polaroid {
-
     position: absolute;
-
     right: 18%;
-
     bottom: 10px;
-
     width: 100px;
-
     padding: 8px 8px 22px;
-
     background: #f3f1e9;
-
     color: #3d4b61;
-
     transform: rotate(-8deg);
-
-    box-shadow:
-        0 12px 25px rgba(0,0,0,.3);
-
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
     z-index: 8;
 }
 
-
 .mini-photo {
-
     height: 75px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     background: #dbe1e9;
-
     font-size: 35px;
 }
 
-
 .mini-polaroid p {
-
     text-align: center;
-
     margin-top: 5px;
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 12px;
 }
 
@@ -1282,177 +841,98 @@ body {
 ===================================================== */
 
 .love-letter-section {
-
     width: min(760px, 96%);
-
     margin: 50px auto 20px;
-
     position: relative;
 }
 
-
 .letter-decoration {
-
     text-align: center;
-
     font-size: 24px;
-
     color: #b8c6db;
-
     margin-bottom: -12px;
-
     position: relative;
-
     z-index: 5;
 }
 
-
 .love-letter {
-
     position: relative;
-
     background:
         linear-gradient(
             135deg,
             #f8f6ef,
             #e9edf1
         );
-
     color: #29364b;
-
     padding: 45px 55px 55px;
-
     border-radius: 4px;
-
     box-shadow:
         0 30px 70px rgba(0,0,0,.45),
         0 5px 15px rgba(0,0,0,.15);
-
     transform: rotate(-.4deg);
 }
 
-
 .love-letter::before {
-
     content: "";
-
     position: absolute;
-
     inset: 12px;
-
-    border:
-        1px solid rgba(38,48,68,.14);
-
+    border: 1px solid rgba(38,48,68,.14);
     pointer-events: none;
 }
 
-
 .letter-top {
-
     display: flex;
-
     justify-content: space-between;
-
     color: #7787a0;
-
     font-size: 8px;
-
     letter-spacing: 4px;
 }
 
-
 .love-letter h2 {
-
     text-align: center;
-
     margin-top: 25px;
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 28px;
-
     font-weight: 500;
-
     color: #29364b;
 }
 
-
 .letter-divider {
-
     text-align: center;
-
     margin: 15px 0 30px;
-
     color: #8392aa;
-
     font-size: 12px;
 }
 
-
 .letter-content p {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 14px;
-
     line-height: 1.9;
-
     margin-bottom: 20px;
-
     color: #37455b;
 }
 
-
 .letter-heart {
-
     text-align: center;
-
     margin: 20px 0;
-
     font-size: 20px;
-
     color: #667997;
 }
 
-
 .big-love {
-
     text-align: center;
-
     margin: 35px 0 30px;
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 25px;
-
     font-weight: 600;
-
     color: #29364b;
 }
 
-
 .letter-signature {
-
     text-align: right;
-
     margin-top: 35px;
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 15px;
-
     color: #596b88;
 }
 
@@ -1462,102 +942,58 @@ body {
 ===================================================== */
 
 .look-up-section {
-
     text-align: center;
-
     margin-top: 80px;
-
     padding-bottom: 30px;
 }
 
-
 .look-up-stars {
-
     color: #c9d6e8;
-
     font-size: 20px;
-
     margin-bottom: 15px;
 }
 
-
 .look-up-section > p {
-
     color: #8f9db2;
-
     font-size: 12px;
 }
 
-
 .look-up-section h2 {
-
     margin: 8px 0 20px;
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 30px;
-
     font-weight: 500;
 }
 
-
 .look-up-button {
-
     padding: 13px 28px;
-
     border-radius: 50px;
-
     background: #e8edf5;
-
     color: #26344b;
-
     font-weight: 700;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.3);
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
 }
-
 
 .look-up-button:hover {
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 15px 30px rgba(0,0,0,.4);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.4);
 }
 
-
 .look-up-hint {
-
     margin-top: 10px;
-
     font-size: 9px !important;
-
     letter-spacing: 2px;
-
     color: #66758b !important;
 }
 
 
 /* =====================================================
    PAGE 3
-   CLEAN ORIGINAL NIGHT SKY LAYOUT
 ===================================================== */
 
 .night-sky-screen {
-
-    position: relative;
-
-    width: 100%;
-
     min-height: 100vh;
-
-    height: 100vh;
-
+    width: 100%;
     background:
         radial-gradient(
             circle at 50% 15%,
@@ -1565,8 +1001,8 @@ body {
             #141f34 42%,
             #070d18 100%
         );
-
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -1575,17 +1011,11 @@ body {
 ===================================================== */
 
 .space-background {
-
     position: absolute;
-
     inset: 0;
-
     width: 100%;
-
     height: 100%;
-
     pointer-events: none;
-
     z-index: 0;
 }
 
@@ -1595,118 +1025,91 @@ body {
 ===================================================== */
 
 .night-stars {
-
     position: absolute;
-
     inset: 0;
-
     width: 100%;
-
     height: 100%;
-
     pointer-events: none;
-
     z-index: 1;
 }
 
-
 .night-stars span {
-
     position: absolute;
-
     color: #f3f7ff;
-
-    animation:
-        nightTwinkle 3s ease-in-out infinite;
+    animation: nightTwinkle 3s ease-in-out infinite;
 }
-
 
 .ns1 {
     left: 5%;
     top: 15%;
 }
 
-
 .ns2 {
     left: 15%;
     top: 30%;
 }
-
 
 .ns3 {
     left: 27%;
     top: 12%;
 }
 
-
 .ns4 {
     left: 40%;
     top: 25%;
 }
-
 
 .ns5 {
     right: 8%;
     top: 12%;
 }
 
-
 .ns6 {
     right: 20%;
     top: 30%;
 }
-
 
 .ns7 {
     right: 30%;
     top: 18%;
 }
 
-
 .ns8 {
     left: 8%;
     top: 65%;
 }
-
 
 .ns9 {
     left: 30%;
     top: 70%;
 }
 
-
 .ns10 {
     right: 12%;
     top: 60%;
 }
-
 
 .ns11 {
     right: 35%;
     top: 70%;
 }
 
-
 .ns12 {
     left: 50%;
     top: 8%;
 }
 
-
 @keyframes nightTwinkle {
-
     0%,
     100% {
         opacity: .2;
+        transform: scale(1);
     }
 
     50% {
         opacity: 1;
-
-        transform:
-            scale(1.4);
+        transform: scale(1.4);
     }
-
 }
 
 
@@ -1715,22 +1118,13 @@ body {
 ===================================================== */
 
 .giant-moon {
-
     position: absolute;
-
-    top: 8%;
-
+    top: 7%;
     left: 50%;
-
+    transform: translateX(-50%);
     width: 180px;
-
     height: 180px;
-
-    transform:
-        translateX(-50%);
-
     border-radius: 50%;
-
     background:
         radial-gradient(
             circle at 35% 30%,
@@ -1738,69 +1132,43 @@ body {
             #d9e3f0 55%,
             #aebdd0
         );
-
     box-shadow:
         0 0 80px rgba(220,232,250,.55);
-
     z-index: 3;
+    pointer-events: none;
 }
-
 
 .moon-crater {
-
     position: absolute;
-
     border-radius: 50%;
-
-    background:
-        rgba(120,135,155,.18);
+    background: rgba(120,135,155,.18);
 }
 
-
 .crater-one {
-
     width: 28px;
-
     height: 20px;
-
     left: 30px;
-
     top: 45px;
 }
 
-
 .crater-two {
-
     width: 20px;
-
     height: 20px;
-
     right: 35px;
-
     top: 65px;
 }
 
-
 .crater-three {
-
     width: 32px;
-
     height: 25px;
-
     left: 60px;
-
     bottom: 35px;
 }
 
-
 .crater-four {
-
     width: 14px;
-
     height: 14px;
-
     right: 55px;
-
     bottom: 55px;
 }
 
@@ -1810,109 +1178,68 @@ body {
 ===================================================== */
 
 .memory-orbs {
-
     position: absolute;
-
     inset: 0;
-
     width: 100%;
-
     height: 100%;
-
     pointer-events: none;
-
     z-index: 4;
 }
 
-
 .memory-orb {
-
     position: absolute;
-
     width: 125px;
-
     height: 125px;
-
     padding: 6px;
-
     border-radius: 50%;
-
     background: #e7edf5;
-
-    box-shadow:
-        0 0 30px rgba(205,220,240,.3);
-
-    animation:
-        orbFloat 5s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(205,220,240,.3);
+    animation: orbFloat 5s ease-in-out infinite;
+    z-index: 5;
 }
 
-
 .memory-orb img {
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     display: block;
 }
 
-
 .orb-one {
-
     left: 12%;
-
     top: 20%;
 }
 
-
 .orb-two {
-
     right: 12%;
-
     top: 26%;
-
     animation-delay: 1s;
 }
 
-
 .orb-three {
-
     left: 50%;
-
+    transform: translateX(-50%);
     bottom: 18%;
-
-    transform:
-        translateX(-50%);
-
-    animation:
-        orbFloatCenter 5s ease-in-out infinite;
-
     animation-delay: 2s;
 }
 
-
 @keyframes orbFloat {
-
     0%,
     100% {
-        transform:
-            translateY(0);
+        transform: translateY(0);
     }
 
     50% {
-        transform:
-            translateY(-15px);
+        transform: translateY(-15px);
     }
-
 }
 
+.orb-three {
+    animation-name: orbFloatCenter;
+}
 
 @keyframes orbFloatCenter {
-
     0%,
     100% {
         transform:
@@ -1925,7 +1252,6 @@ body {
             translateX(-50%)
             translateY(-15px);
     }
-
 }
 
 
@@ -1934,28 +1260,16 @@ body {
 ===================================================== */
 
 .moon-duck {
-
     position: absolute;
-
     right: 18%;
-
     bottom: 12%;
-
+    animation: duckFloat 3s ease-in-out infinite;
     z-index: 6;
-
-    animation:
-        duckFloat 3s ease-in-out infinite;
 }
 
-
 .tiny-duck {
-
     font-size: 65px;
-
-    filter:
-        drop-shadow(
-            0 12px 12px rgba(0,0,0,.4)
-        );
+    filter: drop-shadow(0 12px 12px rgba(0,0,0,.4));
 }
 
 
@@ -1964,78 +1278,50 @@ body {
 ===================================================== */
 
 .sky-message {
-
     position: absolute;
-
     left: 50%;
-
-    top: 47%;
-
-    width: min(500px, 90%);
-
-    transform:
-        translate(-50%, -50%);
-
+    top: 48%;
+    transform: translate(-50%, -50%);
     text-align: center;
-
+    width: min(560px, 82vw);
+    max-width: 560px;
     z-index: 10;
+    pointer-events: none;
 }
 
-
 .sky-small-text {
-
     font-size: 9px;
-
     letter-spacing: 5px;
-
     color: #aebbd0;
-
     margin-bottom: 18px;
 }
 
-
 .sky-message h1 {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
-    font-size:
-        clamp(30px, 5vw, 48px);
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+    font-size: clamp(30px, 5vw, 48px);
     font-weight: 500;
-
     line-height: 1.25;
+    color: #f5f7ff;
+    text-align: center;
+    white-space: normal;
 }
 
-
 .heart-line {
-
-    margin: 15px;
-
+    margin: 15px 0;
     font-size: 35px;
-
     color: #dce6f5;
 }
 
-
 .sky-final-line {
-
     color: #aab8cd;
-
     font-size: 13px;
-
     line-height: 1.7;
-
     margin-top: 10px;
+    text-align: center;
 }
 
-
 .sky-final-line strong {
-
     color: #f2f5fb;
-
     font-size: 17px;
 }
 
@@ -2045,56 +1331,31 @@ body {
 ===================================================== */
 
 .wish-area {
-
     position: absolute;
-
-    left: 50%;
-
     bottom: 5%;
-
-    transform:
-        translateX(-50%);
-
-    width: max-content;
-
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-
     z-index: 20;
 }
 
-
 .wish-button {
-
     padding: 14px 28px;
-
     border-radius: 50px;
-
     background: #e9eef6;
-
     color: #27364d;
-
     font-weight: 700;
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.4);
+    box-shadow: 0 12px 30px rgba(0,0,0,.4);
 }
-
 
 .wish-button:hover {
-
-    transform:
-        translateY(-4px);
+    transform: translateY(-4px);
 }
 
-
 .wish-area p {
-
     margin-top: 8px;
-
     font-size: 9px;
-
     color: #6e7e96;
-
     letter-spacing: 2px;
 }
 
@@ -2104,90 +1365,47 @@ body {
 ===================================================== */
 
 .wish-result {
-
     position: absolute;
-
     left: 50%;
-
     top: 50%;
-
+    transform: translate(-50%, -50%);
     width: min(500px, 90%);
-
-    transform:
-        translate(-50%, -50%);
-
-    padding: 30px;
-
     text-align: center;
-
     z-index: 30;
-
-    background:
-        rgba(14,23,39,.75);
-
-    border:
-        1px solid rgba(220,230,245,.15);
-
+    padding: 30px;
+    background: rgba(14,23,39,.75);
+    border: 1px solid rgba(220,230,245,.15);
     border-radius: 20px;
-
-    backdrop-filter:
-        blur(12px);
-
-    box-shadow:
-        0 25px 70px rgba(0,0,0,.5);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 70px rgba(0,0,0,.5);
 }
 
-
 .wish-stars {
-
     color: #d9e5f6;
-
     font-size: 20px;
-
     margin-bottom: 15px;
 }
 
-
 .wish-result h2 {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 28px;
-
     font-weight: 500;
 }
 
-
 .wish-result > p {
-
     margin-top: 12px;
-
     color: #b2bfd2;
 }
 
-
 .wish-hearts {
-
     margin: 20px 0;
-
     font-size: 25px;
 }
 
-
 .birthday-final-text {
-
-    font-family:
-        "Segoe Print",
-        "Comic Sans MS",
-        cursive;
-
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
     line-height: 2;
-
     font-size: 18px;
-
     color: #eef3fb;
 }
 
@@ -2197,60 +1415,36 @@ body {
 ===================================================== */
 
 .heart-explosion {
-
     position: fixed;
-
     inset: 0;
-
-    width: 100%;
-
-    height: 100%;
-
     pointer-events: none;
-
     z-index: 100;
 }
 
-
 .explosion-heart {
-
     position: absolute;
-
     display: block;
-
     font-size: 25px;
-
-    animation:
-        explodeHeart 4s ease-out forwards;
+    animation: explodeHeart 4s ease-out forwards;
 }
 
-
 @keyframes explodeHeart {
-
     0% {
-
         opacity: 1;
-
         transform:
             translate(-50%, -50%)
             scale(.3);
-
     }
 
     15% {
-
         opacity: 1;
-
         transform:
             translate(-50%, -50%)
             scale(1.3);
-
     }
 
     100% {
-
         opacity: 0;
-
         transform:
             translate(
                 calc(-50% + var(--x)),
@@ -2258,9 +1452,7 @@ body {
             )
             rotate(360deg)
             scale(.6);
-
     }
-
 }
 
 
@@ -2270,283 +1462,187 @@ body {
 
 @media (max-width: 700px) {
 
-
     .birthday-banner {
-
         top: 4%;
-
         padding: 8px 10px;
-
         gap: 2px;
     }
 
-
     .birthday-banner span {
-
         width: 22px;
-
         height: 28px;
-
         font-size: 11px;
     }
 
-
     .duck-area {
-
         left: 50%;
-
         transform:
             translateX(-50%)
             scale(.75);
-
         bottom: 17%;
     }
 
-
     .opening-note {
-
         margin-top: 40px;
-
         padding: 0 20px;
     }
 
-
     .opening-note h1 {
-
         font-size: 34px;
     }
 
-
     .moon-window {
-
         width: 80px;
-
         height: 80px;
-
         right: 5%;
-
         top: 12%;
     }
 
-
     .memory-collage {
-
         min-height: 850px;
     }
 
-
     .photo-one {
-
         width: 220px;
-
         height: 280px;
-
         left: 3%;
-
         top: 10px;
     }
 
-
     .photo-two {
-
         width: 230px;
-
         height: 300px;
-
         top: 180px;
     }
 
-
     .photo-three {
-
         width: 210px;
-
         height: 270px;
-
         right: 2%;
-
         top: 400px;
     }
 
-
     .memory-note {
-
         display: none;
     }
-
 
     .mini-polaroid {
-
         display: none;
     }
 
-
     .love-letter {
-
         padding: 35px 25px 40px;
     }
 
-
     .love-letter h2 {
-
         font-size: 23px;
     }
 
-
     .letter-content p {
-
         font-size: 12px;
-
         line-height: 1.8;
     }
 
-
     .big-love {
-
         font-size: 20px;
     }
 
-
-    /* =================================================
-       PAGE 3 MOBILE
-    ================================================= */
-
+    /* PAGE 3 MOBILE FIX */
 
     .night-sky-screen {
-
-        width: 100%;
-
-        height: 100vh;
-
-        min-height: 100vh;
-
-        overflow: hidden;
+        min-height: 100svh;
+        height: 100svh;
     }
-
 
     .giant-moon {
-
         width: 120px;
-
         height: 120px;
-
         top: 5%;
+        z-index: 3;
     }
 
-
     .memory-orb {
-
         width: 85px;
-
         height: 85px;
     }
 
-
     .orb-one {
-
         left: 4%;
-
-        top: 15%;
+        top: 18%;
     }
-
 
     .orb-two {
-
         right: 4%;
-
-        top: 25%;
+        top: 23%;
     }
-
 
     .orb-three {
-
-        left: 50%;
-
         bottom: 20%;
-
-        transform:
-            translateX(-50%);
-
-        animation:
-            orbFloatCenter 5s ease-in-out infinite;
     }
-
 
     .sky-message {
-
+        top: 48%;
         left: 50%;
-
-        top: 45%;
-
-        width: 90%;
-
-        transform:
-            translate(-50%, -50%);
+        width: 88vw;
+        max-width: 380px;
+        transform: translate(-50%, -50%);
+        z-index: 10;
     }
 
+    .sky-small-text {
+        font-size: 8px;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
 
     .sky-message h1 {
-
-        font-size: 30px;
+        font-size: 29px;
+        line-height: 1.25;
+        text-align: center;
+        white-space: normal;
     }
 
+    .heart-line {
+        margin: 10px 0;
+        font-size: 28px;
+    }
 
     .sky-final-line {
-
         font-size: 11px;
+        line-height: 1.6;
+        margin-top: 7px;
     }
 
+    .sky-final-line strong {
+        font-size: 14px;
+    }
 
     .moon-duck {
-
         right: 4%;
-
         bottom: 15%;
+        z-index: 7;
     }
 
-
     .tiny-duck {
-
         font-size: 45px;
     }
 
-
     .wish-area {
-
-        left: 50%;
-
-        bottom: 5%;
-
-        transform:
-            translateX(-50%);
+        bottom: 4%;
+        z-index: 20;
     }
-
 
     .wish-button {
-
-        white-space: nowrap;
-
-        padding: 13px 24px;
+        padding: 12px 24px;
+        font-size: 13px;
     }
 
+    .wish-area p {
+        font-size: 8px;
+    }
 
     .wish-result {
-
-        width: 90%;
-
+        width: 88vw;
         padding: 25px 18px;
     }
-
-
-    .wish-result h2 {
-
-        font-size: 24px;
-    }
-
-
-    .birthday-final-text {
-
-        font-size: 16px;
-    }
-
 }
