@@ -21,10 +21,6 @@ body {
     background: #101827;
 }
 
-/* =====================================================
-   COMMON
-===================================================== */
-
 .screen {
     min-height: 100vh;
     position: relative;
@@ -34,6 +30,7 @@ body {
 .hidden {
     display: none !important;
 }
+
 
 /* =====================================================
    PAGE 1
@@ -57,6 +54,7 @@ body {
 
     overflow: hidden;
 }
+
 
 /* =====================================================
    STARS
@@ -137,8 +135,7 @@ body {
 }
 
 @keyframes twinkle {
-    0%,
-    100% {
+    0%, 100% {
         opacity: .25;
         transform: scale(.8);
     }
@@ -148,6 +145,7 @@ body {
         transform: scale(1.25);
     }
 }
+
 
 /* =====================================================
    BIRTHDAY BANNER
@@ -164,15 +162,13 @@ body {
 
     display: flex;
     gap: 5px;
-
     padding: 12px 22px;
 
     background: rgba(235, 239, 247, .95);
-
     border-radius: 5px;
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, .3);
+        0 12px 30px rgba(0,0,0,.3);
 
     z-index: 10;
 }
@@ -194,7 +190,7 @@ body {
     border-radius: 3px;
 
     box-shadow:
-        inset 0 -4px 0 rgba(0, 0, 0, .15);
+        inset 0 -4px 0 rgba(0,0,0,.15);
 }
 
 .birthday-banner span:nth-child(2) {
@@ -219,13 +215,13 @@ body {
     box-shadow: none !important;
 }
 
+
 /* =====================================================
    MOON
 ===================================================== */
 
 .moon-window {
     position: absolute;
-
     right: 9%;
     top: 13%;
 
@@ -233,12 +229,10 @@ body {
     height: 130px;
 
     border-radius: 50%;
-
-    background:
-        rgba(255, 255, 255, .04);
+    background: rgba(255,255,255,.04);
 
     box-shadow:
-        0 0 80px rgba(188, 211, 255, .18);
+        0 0 80px rgba(188,211,255,.18);
 }
 
 .moon {
@@ -256,8 +250,9 @@ body {
         );
 
     box-shadow:
-        0 0 40px rgba(224, 236, 255, .6);
+        0 0 40px rgba(224,236,255,.6);
 }
+
 
 /* =====================================================
    DUCK
@@ -265,12 +260,10 @@ body {
 
 .duck-area {
     position: absolute;
-
     left: 7%;
     bottom: 23%;
 
     width: 240px;
-
     text-align: center;
 
     animation:
@@ -284,18 +277,15 @@ body {
 
     filter:
         drop-shadow(
-            0 15px 12px rgba(0, 0, 0, .35)
+            0 15px 12px rgba(0,0,0,.35)
         );
 }
 
 .duck-party-hat {
     position: absolute;
-
     top: -8px;
     left: 54%;
-
     font-size: 35px;
-
     transform: rotate(12deg);
 }
 
@@ -313,7 +303,7 @@ body {
     border-radius: 8px;
 
     box-shadow:
-        0 10px 20px rgba(0, 0, 0, .3);
+        0 10px 20px rgba(0,0,0,.3);
 
     transform: rotate(-2deg);
 }
@@ -335,8 +325,7 @@ body {
 }
 
 @keyframes duckFloat {
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
 
@@ -344,6 +333,7 @@ body {
         transform: translateY(-12px);
     }
 }
+
 
 /* =====================================================
    OPENING NOTE
@@ -354,7 +344,6 @@ body {
     z-index: 5;
 
     text-align: center;
-
     margin-top: 30px;
 
     max-width: 620px;
@@ -363,9 +352,7 @@ body {
 .tiny-label {
     font-size: 9px;
     letter-spacing: 5px;
-
     color: #aebbd0;
-
     margin-bottom: 15px;
 }
 
@@ -380,19 +367,18 @@ body {
 
     line-height: 1.15;
     font-weight: 500;
-
     color: #f7f9ff;
 
     text-shadow:
-        0 4px 25px rgba(0, 0, 0, .35);
+        0 4px 25px rgba(0,0,0,.35);
 }
 
 .opening-note > p:last-child {
     margin-top: 16px;
-
     color: #aebbd0;
     font-size: 14px;
 }
+
 
 /* =====================================================
    GIFT
@@ -431,13 +417,12 @@ body {
     height: 28px;
 
     background: #657997;
-
     border-radius: 6px;
 
     z-index: 3;
 
     box-shadow:
-        0 6px 12px rgba(0, 0, 0, .3);
+        0 6px 12px rgba(0,0,0,.3);
 }
 
 .gift-body {
@@ -450,11 +435,10 @@ body {
     height: 65px;
 
     background: #536783;
-
     border-radius: 3px;
 
     box-shadow:
-        0 10px 15px rgba(0, 0, 0, .35);
+        0 10px 15px rgba(0,0,0,.35);
 }
 
 .gift-ribbon-horizontal {
@@ -490,13 +474,11 @@ body {
     z-index: 5;
 
     font-size: 52px;
-
     transform: rotate(-4deg);
 }
 
 @keyframes giftFloat {
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
 
@@ -504,6 +486,7 @@ body {
         transform: translateY(-7px);
     }
 }
+
 
 /* =====================================================
    BUTTON
@@ -537,16 +520,14 @@ body {
     font-weight: 700;
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, .35);
+        0 12px 30px rgba(0,0,0,.35);
 }
 
 .gift-button:hover {
-    transform:
-        translateY(-4px)
-        scale(1.03);
+    transform: translateY(-4px) scale(1.03);
 
     box-shadow:
-        0 18px 35px rgba(0, 0, 0, .45);
+        0 18px 35px rgba(0,0,0,.45);
 }
 
 .gift-button:active {
@@ -558,9 +539,9 @@ body {
 
     font-size: 10px;
     letter-spacing: 2px;
-
     color: #7f8da4;
 }
+
 
 /* =====================================================
    FLOOR
@@ -578,13 +559,14 @@ body {
     background:
         linear-gradient(
             to bottom,
-            rgba(255, 255, 255, .03),
-            rgba(0, 0, 0, .25)
+            rgba(255,255,255,.03),
+            rgba(0,0,0,.25)
         );
 
     border-top:
-        1px solid rgba(255, 255, 255, .04);
+        1px solid rgba(255,255,255,.04);
 }
+
 
 /* =====================================================
    PAGE 1 FLOATING HEARTS
@@ -674,6 +656,7 @@ body {
     }
 }
 
+
 /* =====================================================
    PAGE 2
 ===================================================== */
@@ -688,7 +671,6 @@ body {
         );
 
     padding: 70px 20px;
-
     min-height: 100vh;
 }
 
@@ -697,9 +679,9 @@ body {
     z-index: 5;
 
     width: min(950px, 100%);
-
     margin: auto;
 }
+
 
 /* =====================================================
    PAGE 2 DECORATIONS
@@ -777,6 +759,7 @@ body {
     top: 30%;
 }
 
+
 /* =====================================================
    MEMORY HEADING
 ===================================================== */
@@ -789,9 +772,7 @@ body {
 .memory-eyebrow {
     font-size: 9px;
     letter-spacing: 5px;
-
     color: #aebbd0;
-
     margin-bottom: 12px;
 }
 
@@ -805,16 +786,15 @@ body {
         clamp(30px, 5vw, 52px);
 
     font-weight: 500;
-
     color: #f5f7fb;
 }
 
 .memory-subtitle {
     margin-top: 8px;
-
     color: #9aa9bf;
     font-size: 13px;
 }
+
 
 /* =====================================================
    COLLAGE
@@ -824,7 +804,6 @@ body {
     position: relative;
 
     min-height: 560px;
-
     margin: auto;
 
     max-width: 850px;
@@ -838,7 +817,7 @@ body {
     padding: 12px 12px 40px;
 
     box-shadow:
-        0 20px 45px rgba(0, 0, 0, .45);
+        0 20px 45px rgba(0,0,0,.45);
 
     color: #26334a;
 
@@ -860,7 +839,6 @@ body {
     height: 100%;
 
     overflow: hidden;
-
     background: #d9dee7;
 }
 
@@ -869,7 +847,6 @@ body {
     height: 100%;
 
     display: block;
-
     object-fit: cover;
 }
 
@@ -881,7 +858,6 @@ body {
     top: 30px;
 
     transform: rotate(-6deg);
-
     z-index: 2;
 }
 
@@ -907,7 +883,6 @@ body {
     top: 55px;
 
     transform: rotate(7deg);
-
     z-index: 3;
 }
 
@@ -927,9 +902,9 @@ body {
         cursive;
 
     font-size: 13px;
-
     color: #43526a;
 }
+
 
 /* =====================================================
    NOTES
@@ -944,7 +919,7 @@ body {
     color: #34435b;
 
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, .25);
+        0 10px 25px rgba(0,0,0,.25);
 
     font-family:
         "Segoe Print",
@@ -976,6 +951,7 @@ body {
     transform: rotate(6deg);
 }
 
+
 /* =====================================================
    MINI POLAROID
 ===================================================== */
@@ -996,7 +972,7 @@ body {
     transform: rotate(-8deg);
 
     box-shadow:
-        0 12px 25px rgba(0, 0, 0, .3);
+        0 12px 25px rgba(0,0,0,.3);
 
     z-index: 8;
 }
@@ -1015,7 +991,6 @@ body {
 
 .mini-polaroid p {
     text-align: center;
-
     margin-top: 5px;
 
     font-family:
@@ -1025,6 +1000,7 @@ body {
 
     font-size: 12px;
 }
+
 
 /* =====================================================
    LOVE LETTER
@@ -1067,8 +1043,8 @@ body {
     border-radius: 4px;
 
     box-shadow:
-        0 30px 70px rgba(0, 0, 0, .45),
-        0 5px 15px rgba(0, 0, 0, .15);
+        0 30px 70px rgba(0,0,0,.45),
+        0 5px 15px rgba(0,0,0,.15);
 
     transform: rotate(-.4deg);
 }
@@ -1077,11 +1053,10 @@ body {
     content: "";
 
     position: absolute;
-
     inset: 12px;
 
     border:
-        1px solid rgba(38, 48, 68, .14);
+        1px solid rgba(38,48,68,.14);
 
     pointer-events: none;
 }
@@ -1118,7 +1093,6 @@ body {
     margin: 15px 0 30px;
 
     color: #8392aa;
-
     font-size: 12px;
 }
 
@@ -1142,7 +1116,6 @@ body {
     margin: 20px 0;
 
     font-size: 20px;
-
     color: #667997;
 }
 
@@ -1173,9 +1146,9 @@ body {
         cursive;
 
     font-size: 15px;
-
     color: #596b88;
 }
+
 
 /* =====================================================
    CONTINUE SECTION
@@ -1185,15 +1158,12 @@ body {
     text-align: center;
 
     margin-top: 80px;
-
     padding-bottom: 30px;
 }
 
 .look-up-stars {
     color: #c9d6e8;
-
     font-size: 20px;
-
     margin-bottom: 15px;
 }
 
@@ -1225,15 +1195,14 @@ body {
     font-weight: 700;
 
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, .3);
+        0 10px 25px rgba(0,0,0,.3);
 }
 
 .look-up-button:hover {
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
-        0 15px 30px rgba(0, 0, 0, .4);
+        0 15px 30px rgba(0,0,0,.4);
 }
 
 .look-up-hint {
@@ -1245,8 +1214,9 @@ body {
     color: #66758b !important;
 }
 
+
 /* =====================================================
-   PAGE 3
+   PAGE 3 — FIXED
 ===================================================== */
 
 .night-sky-screen {
@@ -1258,13 +1228,41 @@ body {
     background:
         radial-gradient(
             circle at 50% 15%,
-            #34496d,
+            #34496d 0%,
             #141f34 42%,
             #070d18 100%
         );
 
     overflow: hidden;
+
+    isolation: isolate;
 }
+
+
+/* =====================================================
+   PAGE 3 BACKGROUND
+===================================================== */
+
+.space-background {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(100,130,175,.12),
+            transparent 45%
+        );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
 
 /* =====================================================
    PAGE 3 STARS
@@ -1353,8 +1351,7 @@ body {
 }
 
 @keyframes nightTwinkle {
-    0%,
-    100% {
+    0%, 100% {
         opacity: .2;
     }
 
@@ -1363,6 +1360,7 @@ body {
         transform: scale(1.4);
     }
 }
+
 
 /* =====================================================
    PAGE 3 MOON
@@ -1374,10 +1372,10 @@ body {
     top: 8%;
     left: 50%;
 
-    transform: translateX(-50%);
-
     width: 180px;
     height: 180px;
+
+    transform: translateX(-50%);
 
     border-radius: 50%;
 
@@ -1390,9 +1388,9 @@ body {
         );
 
     box-shadow:
-        0 0 80px rgba(220, 232, 250, .55);
+        0 0 80px rgba(220,232,250,.55);
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .moon-crater {
@@ -1401,7 +1399,7 @@ body {
     border-radius: 50%;
 
     background:
-        rgba(120, 135, 155, .18);
+        rgba(120,135,155,.18);
 }
 
 .crater-one {
@@ -1436,6 +1434,7 @@ body {
     bottom: 55px;
 }
 
+
 /* =====================================================
    PAGE 3 MEMORY ORBS
 ===================================================== */
@@ -1466,12 +1465,12 @@ body {
     background: #e7edf5;
 
     box-shadow:
-        0 0 30px rgba(205, 220, 240, .3);
+        0 0 30px rgba(205,220,240,.3);
 
     animation:
         orbFloat 5s ease-in-out infinite;
 
-    z-index: 5;
+    pointer-events: auto;
 }
 
 .memory-orb img {
@@ -1501,32 +1500,26 @@ body {
     left: 50%;
     bottom: 18%;
 
-    transform:
-        translateX(-50%);
+    transform: translateX(-50%);
+
+    animation:
+        orbFloatCenter 5s ease-in-out infinite;
 
     animation-delay: 2s;
 }
 
 @keyframes orbFloat {
-    0%,
-    100% {
-        transform:
-            translateY(0);
+    0%, 100% {
+        transform: translateY(0);
     }
 
     50% {
-        transform:
-            translateY(-15px);
+        transform: translateY(-15px);
     }
-}
-
-.orb-three {
-    animation-name: orbFloatCenter;
 }
 
 @keyframes orbFloatCenter {
-    0%,
-    100% {
+    0%, 100% {
         transform:
             translateX(-50%)
             translateY(0);
@@ -1538,6 +1531,7 @@ body {
             translateY(-15px);
     }
 }
+
 
 /* =====================================================
    PAGE 3 DUCK
@@ -1552,7 +1546,7 @@ body {
     animation:
         duckFloat 3s ease-in-out infinite;
 
-    z-index: 8;
+    z-index: 6;
 }
 
 .tiny-duck {
@@ -1560,12 +1554,13 @@ body {
 
     filter:
         drop-shadow(
-            0 12px 12px rgba(0, 0, 0, .4)
+            0 12px 12px rgba(0,0,0,.4)
         );
 }
 
+
 /* =====================================================
-   PAGE 3 MESSAGE
+   PAGE 3 CENTER MESSAGE
 ===================================================== */
 
 .sky-message {
@@ -1574,14 +1569,17 @@ body {
     left: 50%;
     top: 47%;
 
+    width: min(500px, 90%);
+
     transform:
         translate(-50%, -50%);
-
-    width: min(500px, 90%);
 
     text-align: center;
 
     z-index: 10;
+
+    margin: 0;
+    padding: 0;
 }
 
 .sky-small-text {
@@ -1607,14 +1605,12 @@ body {
 
     line-height: 1.25;
 
-    color: #f5f7ff;
+    margin: 0;
 }
 
 .heart-line {
     margin: 15px;
-
     font-size: 35px;
-
     color: #dce6f5;
 }
 
@@ -1622,7 +1618,6 @@ body {
     color: #aab8cd;
 
     font-size: 13px;
-
     line-height: 1.7;
 
     margin-top: 10px;
@@ -1630,12 +1625,12 @@ body {
 
 .sky-final-line strong {
     color: #f2f5fb;
-
     font-size: 17px;
 }
 
+
 /* =====================================================
-   PAGE 3 WISH
+   PAGE 3 WISH BUTTON
 ===================================================== */
 
 .wish-area {
@@ -1660,13 +1655,12 @@ body {
     border-radius: 50px;
 
     background: #e9eef6;
-
     color: #27364d;
 
     font-weight: 700;
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, .4);
+        0 12px 30px rgba(0,0,0,.4);
 }
 
 .wish-button:hover {
@@ -1678,14 +1672,14 @@ body {
     margin-top: 8px;
 
     font-size: 9px;
-
     color: #6e7e96;
 
     letter-spacing: 2px;
 }
 
+
 /* =====================================================
-   WISH RESULT
+   PAGE 3 WISH RESULT
 ===================================================== */
 
 .wish-result {
@@ -1706,10 +1700,10 @@ body {
     padding: 30px;
 
     background:
-        rgba(14, 23, 39, .75);
+        rgba(14,23,39,.75);
 
     border:
-        1px solid rgba(220, 230, 245, .15);
+        1px solid rgba(220,230,245,.15);
 
     border-radius: 20px;
 
@@ -1717,7 +1711,7 @@ body {
         blur(12px);
 
     box-shadow:
-        0 25px 70px rgba(0, 0, 0, .5);
+        0 25px 70px rgba(0,0,0,.5);
 }
 
 .wish-stars {
@@ -1735,19 +1729,16 @@ body {
         cursive;
 
     font-size: 28px;
-
     font-weight: 500;
 }
 
 .wish-result > p {
     margin-top: 12px;
-
     color: #b2bfd2;
 }
 
 .wish-hearts {
     margin: 20px 0;
-
     font-size: 25px;
 }
 
@@ -1758,11 +1749,10 @@ body {
         cursive;
 
     line-height: 2;
-
     font-size: 18px;
-
     color: #eef3fb;
 }
+
 
 /* =====================================================
    HEART EXPLOSION
@@ -1818,6 +1808,7 @@ body {
             scale(.6);
     }
 }
+
 
 /* =====================================================
    MOBILE
@@ -1916,13 +1907,14 @@ body {
         font-size: 20px;
     }
 
-    /* PAGE 3 MOBILE */
+
+    /* ================================
+       PAGE 3 MOBILE FIX
+    ================================= */
 
     .night-sky-screen {
-        width: 100%;
         min-height: 100vh;
-
-        overflow: hidden;
+        width: 100%;
     }
 
     .giant-moon {
@@ -1950,16 +1942,22 @@ body {
     .orb-three {
         left: 50%;
         bottom: 20%;
+
+        transform: translateX(-50%);
+
+        animation-name: orbFloatCenter;
     }
 
     .sky-message {
         left: 50%;
         top: 45%;
 
-        width: 90%;
+        width: calc(100% - 40px);
 
         transform:
             translate(-50%, -50%);
+
+        text-align: center;
     }
 
     .sky-message h1 {
@@ -1968,6 +1966,10 @@ body {
 
     .sky-final-line {
         font-size: 11px;
+    }
+
+    .sky-final-line strong {
+        font-size: 15px;
     }
 
     .moon-duck {
@@ -1980,12 +1982,20 @@ body {
     }
 
     .wish-area {
-        bottom: 5%;
+        left: 50%;
+        bottom: 4%;
+
+        transform:
+            translateX(-50%);
+    }
+
+    .wish-button {
+        padding: 13px 24px;
     }
 
     .wish-result {
-        width: 90%;
-        padding: 25px 20px;
+        width: calc(100% - 30px);
+        padding: 25px 18px;
     }
 }
 ```
